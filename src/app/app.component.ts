@@ -7,7 +7,7 @@ import { faTrash,faFileClipboard } from '@fortawesome/free-solid-svg-icons'
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'PATHFORMATTER';
+  title = 'Path Formater';
   varipstring: string="";
   varopstring: string="";
   CopyClipboardIcon = faFileClipboard;
