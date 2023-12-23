@@ -4,26 +4,21 @@
     width: 600px;
   }
 section{
-      margin-top: 30px;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 83vh;
-      background-color: #f4f4f4;
-
-}
-body {
+    margin-top: 30px;
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 83vh;
+    
+}
 
-  }
 
   header {
     background-color: #415a77;
-    padding: 15px;
-    text-align: center;
+    padding: 25px;
+    text-align: justify;
   }
 
   .logo {
@@ -33,8 +28,8 @@ body {
 
   h1 {
     display: inline-block;
-    color: #e0e1dd;
     margin: 0;
+    color: #f1faee;
   }
 
   .rounded-image {
