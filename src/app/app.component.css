@@ -1,0 +1,64 @@
+
+  /* by id */
+  #textboxes {
+    width: 600px;
+  }
+section{
+      margin-top: 30px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 83vh;
+      background-color: #f4f4f4;
+
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+  }
+
+  header {
+    background-color: #415a77;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .logo {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  h1 {
+    display: inline-block;
+    color: #e0e1dd;
+    margin: 0;
+  }
+
+  .rounded-image {
+    border-radius: 50%;
+  }
+.backgroundimage{
+    background-color: #415a77;
+}
+.txtareainputpath{
+  top: 0px;
+  left: 0px;
+  width: 708.203px;
+  height: 394px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.textbox {
+    width: 45%; /* Adjust the width as needed */
+    margin-bottom: 10px; /* Optional: Add some space between the textboxes */
+}
+.iconsstyle{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
