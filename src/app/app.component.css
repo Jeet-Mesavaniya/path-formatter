@@ -60,6 +60,7 @@ section{
     display: flex;
     justify-content: space-evenly;
     padding-top: 10%;
+    flex-direction: row;
 }
 .textbox {
     width: 40%; /* Adjust the width as needed */
@@ -71,6 +72,7 @@ section{
     margin-right: 6%;
     margin-bottom: 1%; */
     padding-bottom: 1%;
+    float: right;
 
 }
 .btn-all{

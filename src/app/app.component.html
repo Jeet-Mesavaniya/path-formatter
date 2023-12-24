@@ -7,31 +7,24 @@
 </div>
 <br><br>
 <section >
-    <div class="container" style="display: flex; flex-direction: row;">
+    <div class="container">
             <div class="col-md-6" style="display: contents;">
-       
-
                     <div class="col-md-6 textbox">
-                        <div class="iconsstyle" style="float: right;">
-                            <button class="btn-all" (click)="copyTextIP()"><fa-icon [icon]="CopyClipboardIcon"></fa-icon></button>
-                            <button class="btn-all" (click)="PreviousData()"><fa-icon [icon]="replay"></fa-icon></button>
-                            <button class="btn-all" (click)="clearTextALL()"><fa-icon [icon]="TrashIcon"></fa-icon></button>
+                        <div class="iconsstyle">
+                            <button class="btn-all" title="Copy to clipboard" (click)="copyTextIP()"><fa-icon [icon]="CopyClipboardIcon"></fa-icon></button>
+                            <button class="btn-all" title="previous path" (click)="PreviousData()"><fa-icon [icon]="replay"></fa-icon></button>
+                            <button class="btn-all" title="Clear" (click)="clearTextALL()"><fa-icon [icon]="TrashIcon"></fa-icon></button>
                         </div>
                         <textarea   [value]="varipstring" (input)="someLogic()"
                                     class="form-control textarea-box" id="inputtxtbox" rows="5" cols="10"
                                     placeholder="enter your path :"></textarea>     
                     </div>
-
-
-                
             </div>
             
             <div class="col-md-6" style="display: contents;">
-
-                   
                     <div class="col-md-6 textbox">
-                        <div class="iconsstyle" style="float: right;">
-                            <button class="btn-all" (click)="copyTextOP()"><fa-icon [icon]="CopyClipboardIcon"></fa-icon></button>
+                        <div class="iconsstyle">
+                            <button class="btn-all" title="Copy to clipboard" (click)="copyTextOP()"><fa-icon [icon]="CopyClipboardIcon"></fa-icon></button>
                         </div>
                         <textarea [value]="varopstring"
                                   class="form-control textarea-box" id="outputtxtbox" rows="5" cols="250"  
