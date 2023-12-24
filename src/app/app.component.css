@@ -1,8 +1,10 @@
-
+body{
+  max-width: 80px;
+}
   /* by id */
-  #textboxes {
+  /* #textboxes {
     width: 600px;
-  }
+  } */
 section{
     margin-top: 30px;
     margin: 0;
@@ -10,15 +12,16 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 83vh;
+    /* height: 83vh; */
     
 }
 
 
   header {
     background-color: #415a77;
-    padding: 25px;
+    padding: 0;
     text-align: justify;
+    border-bottom: #e5e4e2 1.5px solid;
   }
 
   .logo {
@@ -31,6 +34,16 @@ section{
     margin: 0;
     color: #f1faee;
   }
+  .tital-name{
+    padding: 1.2vh 8vh;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ebf3f8;
+    font-family: 'Concert One',cursive;
+  }
+  .textarea-box{
+    background-color: #b5ceeb;
+  }
 
   .rounded-image {
     border-radius: 50%;
@@ -41,19 +54,27 @@ section{
 .txtareainputpath{
   top: 0px;
   left: 0px;
-  width: 708.203px;
-  height: 394px;
+  /* height: 394px; */
 }
 .container {
     display: flex;
     justify-content: space-between;
 }
 .textbox {
-    width: 45%; /* Adjust the width as needed */
+    width: 40%; /* Adjust the width as needed */
     margin-bottom: 10px; /* Optional: Add some space between the textboxes */
 }
 .iconsstyle{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 6%;
+    margin-bottom: 1%;
+}
+.btn-all{
+  /* width: 33px; */
+  /* height: 33px; */
+  border: none;
+  background-color: #efefef;
+  margin-left: -5px;
 }

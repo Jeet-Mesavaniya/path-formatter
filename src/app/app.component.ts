@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faTrash,faFileClipboard } from '@fortawesome/free-solid-svg-icons'
+import { faTrash,faFileClipboard,faReplyAll } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-root',
@@ -10,11 +10,22 @@ export class AppComponent {
   title = 'Path Formater';
   varipstring: string="";
   varopstring: string="";
+  varPreviousData: string="";
   CopyClipboardIcon = faFileClipboard;
   TrashIcon = faTrash;
+  replay = faReplyAll;
+
+  PreviousData(){
+    (document.getElementById("inputtxtbox") as HTMLInputElement).value = this.varPreviousData;
+    this.someLogic();
+  }
   someLogic(){
     var ipstring =  (document.getElementById("inputtxtbox") as HTMLInputElement).value;
     this.varopstring = ipstring.replaceAll('//',"/");
+    
+    // store for previous data
+    this.varPreviousData = ipstring;
+    (document.getElementById("outputtxtbox") as HTMLInputElement).value = this.varopstring;
   }
 
   copyTextIP() {
