@@ -21,7 +21,7 @@ export class AppComponent {
   }
   someLogic(){
     var ipstring =  (document.getElementById("inputtxtbox") as HTMLInputElement).value;
-    this.varopstring = ipstring.replaceAll('//',"/");
+    this.varopstring = ipstring.replaceAll('//',"/").replaceAll('"','');
     
     // store for previous data
     this.varPreviousData = ipstring;
@@ -35,6 +35,14 @@ export class AppComponent {
   copyTextOP() {
     const text = (document.getElementById("outputtxtbox") as HTMLInputElement).value;
     navigator.clipboard.writeText(text);
+    // document.getElementById("msgcopy")
+    var alertDiv = document.getElementById("msgcopy");
+    if(alertDiv != null)
+    alertDiv.hidden = false;
+    setTimeout(() => {
+      if(alertDiv != null)
+      alertDiv.hidden = true;
+    }, 2000);
   }
 
   clearTextALL() {
