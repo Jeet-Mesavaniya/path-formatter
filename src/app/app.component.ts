@@ -21,8 +21,10 @@ export class AppComponent {
   }
   someLogic(){
     var ipstring =  (document.getElementById("inputtxtbox") as HTMLInputElement).value;
-    this.varopstring = ipstring.replaceAll('//',"/").replaceAll('"','');
-    
+    // this.varopstring = ipstring.replaceAll('//',"/").replaceAll('"','');
+    // this.varopstring = ipstring.replaceAll('\\\\', "\\").replaceAll('\\"', '');
+    this.varopstring = ipstring.replaceAll('//', '/').replaceAll('\\\\', '\\').replaceAll('\\"', '');
+
     // store for previous data
     this.varPreviousData = ipstring;
     (document.getElementById("outputtxtbox") as HTMLInputElement).value = this.varopstring;
